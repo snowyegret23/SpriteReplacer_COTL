@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6CE8AA19-BD2A-4416-9D2A-41C584D0A7AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpriteReplacer</RootNamespace>
+    <AssemblyName>SpriteReplacer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\NoLoveBetweenFollowers\Libraries\0Harmony.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\NoLoveBetweenFollowers\Libraries\Assembly-CSharp.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\NoLoveBetweenFollowers\Libraries\BepInEx.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\NoLoveBetweenFollowers\Libraries\UnityEngine.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.ARModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\NoLoveBetweenFollowers\Libraries\UnityEngine.CoreModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.UI.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>G:\Games\CultoftheLamb\Cult Of The Lamb_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+	  <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
