@@ -1,7 +1,5 @@
 # Sprite Replacer for Cult of the Lamb with BepInEx 5
 
----
-
 **USAGE**
 
 1. Download `SpriteReplacer.zip` from [Release](https://github.com/snowyegret23/SpriteReplacer_COTL/releaseshttps:/)
