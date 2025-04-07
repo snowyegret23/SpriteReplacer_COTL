@@ -1,4 +1,4 @@
-**Sprite Replacer for Cult of the Lamb with BepInEx 5**
+# Sprite Replacer for Cult of the Lamb with BepInEx 5
 
 ---
 
